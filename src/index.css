@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background: mintcream;
+  color: grey;
+}
+
+.booklist {
+  width: 250vw;
+  max-width: 1800px;
+  margin: 5rem auto;
+  display: grid;
+  gap: 4rem;
+}
+
+@media screen and (min-width: 900px) {
+  .booklist {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.book {
+  border-radius: 2rem;
+  padding: 2rem;
+}
